@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<style>
+    .container_main {
+        background-image: url('{% static "images/Image2.png"%}');
+        background-position: center;
+        /* Center the image */
+        background-repeat: no-repeat;
+        /* Do not repeat the image */
+        background-size: cover;
+        width: 1200px;
+        height: 700px;
+    }
+</style>
+{% endblock %}
+
+
+
+
+{% block body %}
+<div class="container_main">
+    <li>
+        <a href="{% url 'cc' %}"> Carbon Calculator</a>
+    </li>
+
+    <li>
+        <a href=""> Carbon Emission Trend Analysis </a>
+    </li>
+    <li>
+        <a href=""> Prediction of CO2 Emission </a>
+    </li>
+
+
+</div>
+
+
+{% endblock %}
+
+
+
+{% block scripts %}
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'cc.html' %}
+{% load static %}
+{% block title %}Cc_Home{% endblock %}
+
+
+{% block extra_head_extended %}
+<style>
+    td{
+        padding: 10px 20px ;
+    }
+
+</style>
+{% endblock %}
+
+
+
+{% block calculator %}
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+    <tr>
+        <td>Electricity_monthly</td>
+        <td>{{form.Electricity_monthly }}</td>
+    </tr>
+
+    <tr>
+        <td>Yearly_distance_travelled_petrol</td>
+        <td>{{form.Yearly_distance_travelled_petrol }}</td>
+    </tr>
+
+    <tr>
+        <td>Yearly_distance_travelled_diesel</td>
+        <td>{{form.Yearly_distance_travelled_diesel }}</td>
+    </tr>
+
+    <tr>
+        <td>LPG_qty</td>
+        <td>{{form.LPG_qty }}</td>
+
+    </tr>
+</table>
+
+    <input type="submit" value="Submit">
+</form>
+
+{% endblock %}

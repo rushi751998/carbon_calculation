@@ -1,0 +1,15 @@
+.heading, .elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body{
+    padding: 20px;
+}
+
+.heading h1{
+    background-color: rgba(255, 255, 255, 0.777);
+    padding: 20px;
+}
+

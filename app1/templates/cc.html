@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block title %}Carboncalculator{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href='{% static "css/cc2.css" %}'>
+<style>
+    .body {
+        background-image: url('{% static "images/bamboo-g489866fdc_1920.jpg"%}');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1200px;
+        height: 700px;
+    }
+
+    .table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.571);
+        padding: 20px;
+        margin-top: 20px;
+        width: 500px;
+    }
+</style>
+
+{% block extra_head_extended %}
+{% endblock %}
+
+{% endblock %}
+
+
+{% block body %}
+
+
+
+<div class="body">
+    <div class="heading">
+        <h1> Carbon Cradit Calculator</h1>
+
+    </div>
+
+    <div class="elements">
+        <nav class="nav nav-pills nav-justified">
+            <a class="nav-link " aria-current="page" href="{% url 'cc_home' %}">House</a>
+            <a class="nav-link" href="{% url 'cc_car' %}">Car</a>
+            <a class="nav-link" href="{% url 'cc_industry' %}">Industy</a>
+            <a class="nav-link" href="{% url 'cc_output' %}">Output</a>
+
+        </nav>
+    </div>
+    <div class="table">
+        {% block calculator %}
+        {% endblock %}
+    </div>
+
+        
+
+
+</div>
+
+{% endblock %}

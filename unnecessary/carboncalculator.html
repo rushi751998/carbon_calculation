@@ -1,0 +1,691 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+
+
+{% block title %}carboncalculator{% endblock %}
+{% block extra_head %} 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href= '{% static "css/carboncalculator.css" %}'    >
+    {% endblock %}
+   
+
+<header>
+
+    <body>    {% block body %} 
+        
+    
+
+        <nav>
+
+            <div class="logo">
+
+                <img src='{% static "images/Cognizant_Logo.png" %}' class="hello" alt="Cognizant_Logo">
+            </div>
+        </nav>
+
+        <ul>
+            <li><a href="#House">House</a></li>
+            <li><a href="#Car">Car</a></li>
+            <li><a href="#Motorbike">Motorbike</a></li>
+            <li><a href="#Result">Result</a></li>
+        </ul>
+        <div class="content">
+            <section id="House">
+                <div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="topleft">
+                                    
+                                    <table class="gentable">
+                                        <tbody>
+                                            <tr>
+                                                <td class="gencell"><span id="ctl05_chsHouse_Label1">Electricity:</span>
+                                                </td>
+                                                <td class="gencell">
+                                                    <table class="layouttable">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <input name="ctl05$chsHouse$txtElecUsage"
+                                                                        type="text" maxlength="8"
+                                                                        id="ctl05_chsHouse_txtElecUsage"
+                                                                        class="numberbox">
+                                                                </td>
+                                                                <td>
+
+                                                                    <div id="ctl05_chsHouse_pnlElecFactor">
+
+                                                                        <span id="ctl05_chsHouse_lblElecFactor1">kWh at
+                                                                            a factor of</span>
+                                                                        <input name="ctl05$chsHouse$txtElecFactor"
+                                                                            type="text" value="0.3929" maxlength="8"
+                                                                            id="ctl05_chsHouse_txtElecFactor"
+                                                                            class="numberbox">
+                                                                        <span
+                                                                            id="ctl05_chsHouse_lblElecFactor2">kgCO<span
+                                                                                class="co2">2</span>e/kWh</span>
+                                                                        <input type="submit"
+                                                                            name="ctl05$chsHouse$btnElecFactor"
+                                                                            value="what's this?"
+                                                                            onclick="alert('The electricity conversion factor is suggested for the country you have selected, but you can replace it with your own if you wish (e.g. a factor provided by your energy provider which may be on your energy bill).'); return false;"
+                                                                            id="ctl05_chsHouse_btnElecFactor"
+                                                                            class="linkbutton">
+
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <span id="ctl05_chsHouse_rgvElecUsage"
+                                                                        style="visibility:hidden;">*</span>
+                                                                    <span id="ctl05_chsHouse_cuvElecBoth"
+                                                                        style="visibility:hidden;">*</span>
+                                                                    <span id="ctl05_chsHouse_rgvElecFactor"
+                                                                        style="visibility:hidden;">*</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="gencell"><span id="ctl05_chsHouse_Label2">Natural gas:</span>
+                                                </td>
+                                                <td class="gencell">
+                                                    <table class="layouttable">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <input name="ctl05$chsHouse$txtGasUsage" type="text"
+                                                                        maxlength="8" id="ctl05_chsHouse_txtGasUsage"
+                                                                        class="numberbox">
+                                                                </td>
+                                                                <td>
+                                                                    <select name="ctl05$chsHouse$ddlGasUsageUnit"
+                                                                        id="ctl05_chsHouse_ddlGasUsageUnit"
+                                                                        class="mediumbox">
+                                                                        <option value="0.18254">kWh</option>
+                                                                        <option value="5.34844">therms</option>
+                                                                        <option value="4.3000">USD ($)</option>
+
+                                                                    </select>
+                                                                </td>
+                                                                <td>
+                                                                    <span id="ctl05_chsHouse_rgvGasUsage"
+                                                                        style="visibility:hidden;">*</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="gencell"><span id="ctl05_chsHouse_Label3">Heating oil:</span>
+                                                </td>
+                                                <td class="gencell">
+                                                    <table class="layouttable">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <input name="ctl05$chsHouse$txtOilUsage" type="text"
+                                                                        maxlength="8" id="ctl05_chsHouse_txtOilUsage"
+                                                                        class="numberbox">
+                                                                </td>
+                                                                <td>
+                                                                    <select name="ctl05$chsHouse$ddlOilUsageUnit"
+                                                                        id="ctl05_chsHouse_ddlOilUsageUnit"
+                                                                        class="mediumbox">
+                                                                        <option value="0.24677">kWh</option>
+                                                                        <option value="2.54013">litres</option>
+                                                                        <option value="3165.01">metric tons</option>
+                                                                        <option selected="selected" value="9.61543">US
+                                                                            gallons</option>
+
+                                                                    </select>
+                                                                </td>
+                                                                <td>
+                                                                    <span id="ctl05_chsHouse_rgvOilUsage"
+                                                                        style="visibility:hidden;">*</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="gencell"><span id="ctl05_chsHouse_Label4">Coal:</span></td>
+                                                <td class="gencell">
+                                                    <table class="layouttable">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <input name="ctl05$chsHouse$txtCoalUsage"
+                                                                        type="text" maxlength="8"
+                                                                        id="ctl05_chsHouse_txtCoalUsage"
+                                                                        class="numberbox">
+                                                                </td>
+                                                                <td>
+                                                                    <select name="ctl05$chsHouse$ddlCoalUsageUnit"
+                                                                        id="ctl05_chsHouse_ddlCoalUsageUnit"
+                                                                        class="mediumbox">
+                                                                        <option selected="selected" value="0.34462">kWh
+                                                                        </option>
+                                                                        <option value="2883.26">metric tons</option>
+                                                                        <option value="28.8326">x 10kg bags</option>
+                                                                        <option value="57.6652">x 20kg bags</option>
+                                                                        <option value="72.0815">x 25kg bags</option>
+                                                                        <option value="144.163">x 50kg bags</option>
+
+                                                                    </select>
+                                                                </td>
+                                                                <td>
+                                                                    <span id="ctl05_chsHouse_rgvCoalUsage"
+                                                                        style="visibility:hidden;">*</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="gencell"><span id="ctl05_chsHouse_Label5">LPG:</span></td>
+                                                <td class="gencell">
+                                                    <table class="layouttable">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <input name="ctl05$chsHouse$txtLpgUsage" type="text"
+                                                                        maxlength="8" id="ctl05_chsHouse_txtLpgUsage"
+                                                                        class="numberbox">
+                                                                </td>
+                                                                <td>
+                                                                    <select name="ctl05$chsHouse$ddlLpgUsageUnit"
+                                                                        id="ctl05_chsHouse_ddlLpgUsageUnit"
+                                                                        class="mediumbox">
+                                                                        <option value="0.21449">kWh</option>
+                                                                        <option value="1.55709">litres</option>
+                                                                        <option selected="selected" value="6.28458">
+                                                                            therms</option>
+                                                                        <option value="5.89422">US gallons</option>
+
+                                                                    </select>
+                                                                </td>
+                                                                <td>
+                                                                    <span id="ctl05_chsHouse_rgvLpgUsage"
+                                                                        style="visibility:hidden;">*</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="gencell"><span id="ctl05_chsHouse_Label6">Propane:</span>
+                                                </td>
+                                                <td class="gencell">
+                                                    <table class="layouttable">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <input name="ctl05$chsHouse$txtPropaneUsage"
+                                                                        type="text" maxlength="8"
+                                                                        id="ctl05_chsHouse_txtPropaneUsage"
+                                                                        class="numberbox">
+                                                                </td>
+                                                                <td>
+                                                                    <select name="ctl05$chsHouse$ddlPropaneUsageUnit"
+                                                                        id="ctl05_chsHouse_ddlPropaneUsageUnit"
+                                                                        class="mediumbox">
+                                                                        <option value="1.54354">litres</option>
+                                                                        <option selected="selected" value="5.84293">US
+                                                                            gallons</option>
+
+                                                                    </select>
+                                                                </td>
+                                                                <td>
+                                                                    <span id="ctl05_chsHouse_rgvPropaneUsage"
+                                                                        style="visibility:hidden;">*</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="gencell"><span id="ctl05_chsHouse_Label7">Wooden
+                                                        pellets:</span></td>
+                                                <td class="gencell">
+                                                    <table class="layouttable">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <input name="ctl05$chsHouse$txtWoodUsage"
+                                                                        type="text" maxlength="8"
+                                                                        id="ctl05_chsHouse_txtWoodUsage"
+                                                                        class="numberbox">
+                                                                </td>
+                                                                <td>
+                                                                    <select name="ctl05$chsHouse$ddlWoodUsageUnit"
+                                                                        id="ctl05_chsHouse_ddlWoodUsageUnit"
+                                                                        class="mediumbox">
+                                                                        <option selected="selected" value="50.55459">
+                                                                            metric tons</option>
+
+                                                                    </select>
+                                                                </td>
+                                                                <td>
+                                                                    <span id="ctl05_chsHouse_rgvWoodUsage"
+                                                                        style="visibility:hidden;">*</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="gencell"></td>
+                                                <td class="gencell">
+                                                    <table class="layouttable">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+
+                                                                </td>
+                                                                <td>
+
+                                                                </td>
+                                                                <td>
+
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </section>
+            <section id="Car">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="topleft">
+
+                                <img src="images/car.jpg" alt="carcarboncalculator">
+                                <h2>Car</h2>
+                                <table class="gentable">
+                                    <tbody><tr>
+                                        <td class="gencell"><span id="ctl05_chsHouse_Label1">Electricity:</span></td>
+                                        <td class="gencell">
+                                            <table class="layouttable">
+                                                <tbody><tr>
+                                                    <td>
+                                                        <input name="ctl05$chsHouse$txtElecUsage" type="text" maxlength="8" id="ctl05_chsHouse_txtElecUsage" class="numberbox">
+                                                    </td>
+                                                    <td>
+                                                        
+                                                        <div id="ctl05_chsHouse_pnlElecFactor">
+                                        
+                                                            <span id="ctl05_chsHouse_lblElecFactor1">kWh at a factor of</span>
+                                                            <input name="ctl05$chsHouse$txtElecFactor" type="text" value="0.3929" maxlength="8" id="ctl05_chsHouse_txtElecFactor" class="numberbox">
+                                                            <span id="ctl05_chsHouse_lblElecFactor2">kgCO<span class="co2">2</span>e/kWh</span>
+                                                            <input type="submit" name="ctl05$chsHouse$btnElecFactor" value="what's this?" onclick="alert('The electricity conversion factor is suggested for the country you have selected, but you can replace it with your own if you wish (e.g. a factor provided by your energy provider which may be on your energy bill).'); return false;" id="ctl05_chsHouse_btnElecFactor" class="linkbutton">
+                                                        
+                                    </div>
+                                                    </td>
+                                                    <td>
+                                                        <span id="ctl05_chsHouse_rgvElecUsage" style="visibility:hidden;">*</span>
+                                                        <span id="ctl05_chsHouse_cuvElecBoth" style="visibility:hidden;">*</span>
+                                                        <span id="ctl05_chsHouse_rgvElecFactor" style="visibility:hidden;">*</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gencell"><span id="ctl05_chsHouse_Label2">Natural gas:</span></td>
+                                        <td class="gencell">
+                                            <table class="layouttable">
+                                                <tbody><tr>
+                                                    <td>
+                                                        <input name="ctl05$chsHouse$txtGasUsage" type="text" maxlength="8" id="ctl05_chsHouse_txtGasUsage" class="numberbox">
+                                                    </td>
+                                                    <td>
+                                                        <select name="ctl05$chsHouse$ddlGasUsageUnit" id="ctl05_chsHouse_ddlGasUsageUnit" class="mediumbox">
+                                        <option value="0.18254">kWh</option>
+                                        <option value="5.34844">therms</option>
+                                        <option value="4.3000">USD ($)</option>
+                                
+                                    </select>
+                                                    </td>
+                                                    <td>
+                                                        <span id="ctl05_chsHouse_rgvGasUsage" style="visibility:hidden;">*</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gencell"><span id="ctl05_chsHouse_Label3">Heating oil:</span></td>
+                                        <td class="gencell">
+                                            <table class="layouttable">
+                                                <tbody><tr>
+                                                    <td>
+                                                        <input name="ctl05$chsHouse$txtOilUsage" type="text" maxlength="8" id="ctl05_chsHouse_txtOilUsage" class="numberbox">
+                                                    </td>
+                                                    <td>
+                                                        <select name="ctl05$chsHouse$ddlOilUsageUnit" id="ctl05_chsHouse_ddlOilUsageUnit" class="mediumbox">
+                                        <option value="0.24677">kWh</option>
+                                        <option value="2.54013">litres</option>
+                                        <option value="3165.01">metric tons</option>
+                                        <option selected="selected" value="9.61543">US gallons</option>
+                                
+                                    </select>
+                                                    </td>
+                                                    <td>
+                                                        <span id="ctl05_chsHouse_rgvOilUsage" style="visibility:hidden;">*</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gencell"><span id="ctl05_chsHouse_Label4">Coal:</span></td>
+                                        <td class="gencell">
+                                            <table class="layouttable">
+                                                <tbody><tr>
+                                                    <td>
+                                                        <input name="ctl05$chsHouse$txtCoalUsage" type="text" maxlength="8" id="ctl05_chsHouse_txtCoalUsage" class="numberbox">
+                                                    </td>
+                                                    <td>
+                                                        <select name="ctl05$chsHouse$ddlCoalUsageUnit" id="ctl05_chsHouse_ddlCoalUsageUnit" class="mediumbox">
+                                        <option selected="selected" value="0.34462">kWh</option>
+                                        <option value="2883.26">metric tons</option>
+                                        <option value="28.8326">x 10kg bags</option>
+                                        <option value="57.6652">x 20kg bags</option>
+                                        <option value="72.0815">x 25kg bags</option>
+                                        <option value="144.163">x 50kg bags</option>
+                                
+                                    </select>
+                                                    </td>
+                                                    <td>
+                                                        <span id="ctl05_chsHouse_rgvCoalUsage" style="visibility:hidden;">*</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gencell"><span id="ctl05_chsHouse_Label5">LPG:</span></td>
+                                        <td class="gencell">
+                                            <table class="layouttable">
+                                                <tbody><tr>
+                                                    <td>
+                                                        <input name="ctl05$chsHouse$txtLpgUsage" type="text" maxlength="8" id="ctl05_chsHouse_txtLpgUsage" class="numberbox">
+                                                    </td>
+                                                    <td>
+                                                        <select name="ctl05$chsHouse$ddlLpgUsageUnit" id="ctl05_chsHouse_ddlLpgUsageUnit" class="mediumbox">
+                                        <option value="0.21449">kWh</option>
+                                        <option value="1.55709">litres</option>
+                                        <option selected="selected" value="6.28458">therms</option>
+                                        <option value="5.89422">US gallons</option>
+                                
+                                    </select>
+                                                    </td>
+                                                    <td>
+                                                        <span id="ctl05_chsHouse_rgvLpgUsage" style="visibility:hidden;">*</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gencell"><span id="ctl05_chsHouse_Label6">Propane:</span></td>
+                                        <td class="gencell">
+                                            <table class="layouttable">
+                                                <tbody><tr>
+                                                    <td>
+                                                        <input name="ctl05$chsHouse$txtPropaneUsage" type="text" maxlength="8" id="ctl05_chsHouse_txtPropaneUsage" class="numberbox">
+                                                    </td>
+                                                    <td>
+                                                        <select name="ctl05$chsHouse$ddlPropaneUsageUnit" id="ctl05_chsHouse_ddlPropaneUsageUnit" class="mediumbox">
+                                        <option value="1.54354">litres</option>
+                                        <option selected="selected" value="5.84293">US gallons</option>
+                                
+                                    </select>
+                                                    </td>
+                                                    <td>
+                                                        <span id="ctl05_chsHouse_rgvPropaneUsage" style="visibility:hidden;">*</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gencell"><span id="ctl05_chsHouse_Label7">Wooden pellets:</span></td>
+                                        <td class="gencell">
+                                            <table class="layouttable">
+                                                <tbody><tr>
+                                                    <td>
+                                                        <input name="ctl05$chsHouse$txtWoodUsage" type="text" maxlength="8" id="ctl05_chsHouse_txtWoodUsage" class="numberbox">
+                                                    </td>
+                                                    <td>
+                                                        <select name="ctl05$chsHouse$ddlWoodUsageUnit" id="ctl05_chsHouse_ddlWoodUsageUnit" class="mediumbox">
+                                        <option selected="selected" value="50.55459">metric tons</option>
+                                
+                                    </select>
+                                                    </td>
+                                                    <td>
+                                                        <span id="ctl05_chsHouse_rgvWoodUsage" style="visibility:hidden;">*</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gencell"></td>
+                                        <td class="gencell">
+                                            <table class="layouttable">
+                                                <tbody><tr>
+                                                    <td>
+                                                        
+                                                    </td>
+                                                    <td>
+                                                        
+                                                    </td>
+                                                    <td>
+                                                        
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody></table>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </section>
+            <section id="Motorbike">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="topleft">
+                                <img src="images/motorbike.jpg" alt="motorbikecarboncalculator">
+                                <h2>Motorbike</h2> 
+                                <table class="gentable">
+                                    <tbody><tr>
+                                        <td class="gencell"><span id="ctl05_lblMileage">Mileage:</span></td>
+                                        <td class="gencell"><table class="layouttable"><tbody><tr><td>
+                                
+                                
+                                
+                                <input name="ctl05$cdsMotorbike$txtMileage" type="text" maxlength="7" id="ctl05_cdsMotorbike_txtMileage" class="numberbox">
+                                <select name="ctl05$cdsMotorbike$ddlMileageUnit" id="ctl05_cdsMotorbike_ddlMileageUnit" class="mediumbox">
+                                        <option selected="selected" value="1.6093">miles</option>
+                                        <option value="1">km</option>
+                                
+                                    </select>
+                                <span id="ctl05_cdsMotorbike_rfvMileage" style="visibility:hidden;">*</span>
+                                <span id="ctl05_cdsMotorbike_rgvMileage" style="visibility:hidden;">*</span>
+                                </td></tr></tbody></table></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gencellright">&nbsp;</td>
+                                        <td class="gencell"><table class="layouttable"><tbody><tr><td><div class="RadAjaxPanel" id="ctl05_ctl05_ddlMotorbikeDerivativePanel" style="display: block;">
+                                        <select name="ctl05$ddlMotorbikeDerivative" onchange="javascript:setTimeout('__doPostBack(\'ctl05$ddlMotorbikeDerivative\',\'\')', 0)" id="ctl05_ddlMotorbikeDerivative" class="dropbox">
+                                            <option selected="selected" value=""> - select type - </option>
+                                            <option value="83.06">small motorbike/moped/scooter up to 125cc</option>
+                                            <option value="100.9">medium motorbike over 125cc and up to 500cc</option>
+                                            <option value="132.45">large motorbike over 500cc</option>
+                                
+                                        </select>
+                                    </div></td><td><noscript><input type="submit" name="ctl05$btnGo" value="Go" id="ctl05_btnGo" class="linkbutton" /></noscript></td></tr></tbody></table></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gencell"><span id="ctl05_lblEfficiency">Or enter efficiency:</span></td>
+                                        <td class="gencell"><table class="layouttable"><tbody><tr><td><div class="RadAjaxPanel" id="ctl05_ctl05_cefMotorbikePanel" style="display: block;">
+                                        <input name="ctl05$cefMotorbike$txtEfficiency" type="text" maxlength="7" id="ctl05_cefMotorbike_txtEfficiency" class="numberbox">
+                                <select name="ctl05$cefMotorbike$ddlEfficiencyUnit" id="ctl05_cefMotorbike_ddlEfficiencyUnit" class="mediumbox">
+                                            <option value="1">g/km</option>
+                                            <option value="10">L/100km</option>
+                                            <option value="-2824.9">mpg (UK)</option>
+                                            <option selected="selected" value="-2352.2">mpg (US)</option>
+                                
+                                        </select>
+                                
+                                <span id="ctl05_cefMotorbike_rfvEfficiency" style="visibility:hidden;">*</span>
+                                <span id="ctl05_cefMotorbike_rgvEfficiency" style="visibility:hidden;">*</span>
+                                    </div></td><td><div class="RadAjaxPanel" id="ctl05_ctl05_btnClearPanel" style="display: block;">
+                                
+                                    </div></td></tr></tbody></table></td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </section>
+            <section id="Result">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="result">
+                                <h2>Result</h2>
+                                <div class="resultssummary"><div class="chromefix">
+                                    <div>
+                                    <div>
+                                            <table class="footprints" cellspacing="2" cellpadding="2" id="ctl05_csyResults_grvSummary" style="border-style:None;">
+                                                <tbody><tr>
+                                                    <td align="left" style="border-width:0px;">
+                                                    
+                                                    
+                                                    <input id="ctl05_csyResults_grvSummary_chkInclude_0" type="checkbox" name="ctl05$csyResults$grvSummary$ctl02$chkInclude" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl05$csyResults$grvSummary$ctl02$chkInclude\',\'\')', 0)"><label for="ctl05_csyResults_grvSummary_chkInclude_0">House</label>
+                                                </td><td align="right" style="border-width:0px;white-space:nowrap;">
+                                                    <span id="ctl05_csyResults_grvSummary_lblTonnes_0" htmlencode="false" dataformatstring="{0:0.00} metric tons of CO<span class=&quot;co2&quot;>2</span>e">0.00 metric tons of CO<span class="co2">2</span>e</span>
+                                                </td><td>
+                                                    
+                                                </td>
+                                                </tr><tr>
+                                                    <td align="left" style="border-width:0px;">
+                                                    
+                                                    
+                                                    <input id="ctl05_csyResults_grvSummary_chkInclude_1" type="checkbox" name="ctl05$csyResults$grvSummary$ctl03$chkInclude" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl05$csyResults$grvSummary$ctl03$chkInclude\',\'\')', 0)"><label for="ctl05_csyResults_grvSummary_chkInclude_1">Flights</label>
+                                                </td><td align="right" style="border-width:0px;white-space:nowrap;">
+                                                    <span id="ctl05_csyResults_grvSummary_lblTonnes_1" htmlencode="false" dataformatstring="{0:0.00} metric tons of CO<span class=&quot;co2&quot;>2</span>e">0.00 metric tons of CO<span class="co2">2</span>e</span>
+                                                </td><td>
+                                                    
+                                                </td>
+                                                </tr><tr>
+                                                    <td align="left" style="border-width:0px;">
+                                                    
+                                                    
+                                                    <input id="ctl05_csyResults_grvSummary_chkInclude_2" type="checkbox" name="ctl05$csyResults$grvSummary$ctl04$chkInclude" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl05$csyResults$grvSummary$ctl04$chkInclude\',\'\')', 0)"><label for="ctl05_csyResults_grvSummary_chkInclude_2">Car</label>
+                                                </td><td align="right" style="border-width:0px;white-space:nowrap;">
+                                                    <span id="ctl05_csyResults_grvSummary_lblTonnes_2" htmlencode="false" dataformatstring="{0:0.00} metric tons of CO<span class=&quot;co2&quot;>2</span>e">0.00 metric tons of CO<span class="co2">2</span>e</span>
+                                                </td><td>
+                                                    
+                                                </td>
+                                                </tr><tr>
+                                                    <td align="left" style="border-width:0px;">
+                                                    
+                                                    
+                                                    <input id="ctl05_csyResults_grvSummary_chkInclude_3" type="checkbox" name="ctl05$csyResults$grvSummary$ctl05$chkInclude" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl05$csyResults$grvSummary$ctl05$chkInclude\',\'\')', 0)"><label for="ctl05_csyResults_grvSummary_chkInclude_3">Motorbike</label>
+                                                </td><td align="right" style="border-width:0px;white-space:nowrap;">
+                                                    <span id="ctl05_csyResults_grvSummary_lblTonnes_3" htmlencode="false" dataformatstring="{0:0.00} metric tons of CO<span class=&quot;co2&quot;>2</span>e">0.00 metric tons of CO<span class="co2">2</span>e</span>
+                                                </td><td>
+                                                    
+                                                </td>
+                                                </tr><tr>
+                                                    <td align="left" style="border-width:0px;">
+                                                    
+                                                    
+                                                    <input id="ctl05_csyResults_grvSummary_chkInclude_4" type="checkbox" name="ctl05$csyResults$grvSummary$ctl06$chkInclude" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl05$csyResults$grvSummary$ctl06$chkInclude\',\'\')', 0)"><label for="ctl05_csyResults_grvSummary_chkInclude_4">Bus &amp; Rail</label>
+                                                </td><td align="right" style="border-width:0px;white-space:nowrap;">
+                                                    <span id="ctl05_csyResults_grvSummary_lblTonnes_4" htmlencode="false" dataformatstring="{0:0.00} metric tons of CO<span class=&quot;co2&quot;>2</span>e">0.00 metric tons of CO<span class="co2">2</span>e</span>
+                                                </td><td>
+                                                    
+                                                </td>
+                                                </tr><tr>
+                                                    <td align="left" style="border-width:0px;">
+                                                    
+                                                    
+                                                    <input id="ctl05_csyResults_grvSummary_chkInclude_5" type="checkbox" name="ctl05$csyResults$grvSummary$ctl07$chkInclude" checked="checked" onclick="javascript:setTimeout('__doPostBack(\'ctl05$csyResults$grvSummary$ctl07$chkInclude\',\'\')', 0)"><label for="ctl05_csyResults_grvSummary_chkInclude_5">Secondary</label>
+                                                </td><td align="right" style="border-width:0px;white-space:nowrap;">
+                                                    <span id="ctl05_csyResults_grvSummary_lblTonnes_5" htmlencode="false" dataformatstring="{0:0.00} metric tons of CO<span class=&quot;co2&quot;>2</span>e">0.00 metric tons of CO<span class="co2">2</span>e</span>
+                                                </td><td>
+                                                    
+                                                </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </div>
+                                    </div>
+                                    <div id="ctl05_csyResults_pnlOffset1">
+                                            
+                                        <h4 class="verticalspaced"><span id="ctl05_csyResults_lblGrandTotal">Total = 0.00 metric tons of CO<span class="co2">2</span>e</span></h4>
+                                        
+                                    
+                                        </div>
+                                    
+                                    <div id="ctl05_csyResults_pnlOffset2">
+                                            
+                                        <div class="clearboth"></div>
+                                        <p class="offsetexplanation">To offset some or all of your carbon footprint, click the sections you would like to offset in the list above, and click the Offset Now button.</p>
+                                        <noscript><input type="submit" name="ctl05$csyResults$btnNoScript" value="Update Total To Offset" id="ctl05_csyResults_btnNoScript" class="linkbutton" /></noscript>
+                                    
+                                    </div>
+                                    <div class="clearboth"></div>
+                                    <table class="offsetlink">
+                                        <tbody><tr>
+                                            <td class="offsetlinkcell"><h3 class="nomargin"><span id="ctl05_csyResults_lblTotal">Total To Offset = 0.00 metric tons of CO<span class="co2">2</span>e</span></h3></td>
+                                            <td class="offsetlinkcell nowrapping"><a id="ctl05_csyResults_hylTotalToOffset" class="aspNetDisabled buttonlinklight" target="_top">Offset Now</a></td>
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                    </div></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+               
+            </section>
+        </div>
+        {% endblock %}
+    </body>
+</header>
+
+</html>

@@ -1,0 +1,49 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+
+{% block title %}Index{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}"> 
+{% endblock %}
+
+
+
+{% block body %} 
+<header>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="{% static 'images/Cognizant_Logo.png' %}" class="hello" alt="Cognizant_Logo">  
+            </div>   
+        </nav>
+            
+            <h1>
+                ESG ANALYTICS
+            </h1>
+
+            <section>
+                <h2 class="topright">
+                    Sustanibility Designed to help.
+                </h2>
+                <ul>
+                    <li>
+                        <a href="carbon_calculator" >Carbon Calculator</a>
+                        <a href="carbon_emission.html" target="_blank">Carbon Emission Trend Analysis</a>
+                        <a href="prediction_of_co2.html" target="_blank">Prediction of CO2 Emission</a>
+
+                    </li>
+                </ul>
+            </section>
+    </body>
+</header>
+
+
+
+{% endblock %}
+
+
+
+{% block scripts %}
+{% endblock %}
