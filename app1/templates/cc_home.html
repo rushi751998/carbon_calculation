@@ -8,6 +8,14 @@
     td{
         padding: 10px 20px ;
     }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+    }
+
 
 </style>
 {% endblock %}
@@ -15,32 +23,31 @@
 
 
 {% block calculator %}
-<form action="" method="post">
+<form action="cc_car" method="post">
     {% csrf_token %}
     <table>
-    <tr>
-        <td>Electricity_monthly</td>
+    <tr>                      
+        <td>Electricity Consumption Monthly</td>
         <td>{{form.Electricity_monthly }}</td>
     </tr>
 
     <tr>
-        <td>Yearly_distance_travelled_petrol</td>
-        <td>{{form.Yearly_distance_travelled_petrol }}</td>
+        <td>Yearly distance travelled using Petrol</td>
+        <td><input type="text" name="abc">{{form.Yearly_distance_travelled_petrol }}</td>
     </tr>
 
     <tr>
-        <td>Yearly_distance_travelled_diesel</td>
+        <td>Yearly distance travelled Diesel</td>
         <td>{{form.Yearly_distance_travelled_diesel }}</td>
     </tr>
 
     <tr>
-        <td>LPG_qty</td>
+        <td>No of LPG used </td>
         <td>{{form.LPG_qty }}</td>
 
     </tr>
 </table>
-
-    <input type="submit" value="Submit">
+    <input class="inpbt" type="submit" value="Submit">
 </form>
 
 {% endblock %}

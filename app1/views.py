@@ -15,6 +15,11 @@ def cc_home(request):
     return render(request, 'cc_home.html',parm)
 
 def cc_car(request):
+    if request.method =="POST":
+        form_responce = request.POST.get('abc')
+
+        print((form_responce))
+        
     return render(request, 'cc_car.html')
 
 

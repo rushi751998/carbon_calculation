@@ -17,4 +17,4 @@ class Calculator_form(forms.Form):
     
     # class Meta:
     #     model=Calculator_form
-    #     fields ="__all__"
+    #     fields ="__all__"t44hrt
