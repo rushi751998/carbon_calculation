@@ -16,20 +16,23 @@
         height: 700px;
     }
 
-    table {
+    table,.result_main,.result {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: rgba(255, 255, 255, 0.705);
         padding: 20px;
         margin-top: 20px;
-    }  
-    .inpbt{
+    }
+
+    .input {
         margin-top: 20px;
     }
-                                                                                   
+    .result_main{background-color: rgba(121, 121, 121, 0);}
+    .result{background-color: white;}
 
-    
+  
+
 </style>
 
 {% block extra_head_extended %}
@@ -57,14 +60,11 @@
 
         </nav>
     </div>
-    
+
     <div class="table">
         {% block calculator %}
         {% endblock %}
     </div>
-
-        
-
 
 </div>
 

@@ -1,8 +1,18 @@
 {% extends 'cc.html' %}
 {% load static %}
+{% block title %}Car{% endblock %}
+
 
 {% block calculator %}
-<h1>
+<!-- <h1>
     car
-</h1>
+</h1> -->
+<div class="result_main">
+    <div class="result">
+        Your Carbon Calculation : {{calulations}}
+    </div>
+</div>
 {% endblock %}
+
+
+
