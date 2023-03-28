@@ -21,7 +21,7 @@
 
 
 {% block calculator %}
-<form action="cc_car" method="post">
+<form action="result" method="post">
     {% csrf_token %}
     <table>
     <tr>                      
@@ -47,14 +47,13 @@
 </table>
     <input class="input" type="submit" value="Submit">
 </form>
-
+{% block result %}
 <div class="result_main">
     <div class="result">
         Your Carbon Calculation : 0
     </div>
 </div>
-
-
+{% endblock %}
 {% endblock %}
 
 

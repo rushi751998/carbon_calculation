@@ -26,22 +26,27 @@ def cc_home(request):
     parm = {"form":Calculator_form()}
     return render(request, 'cc_home.html',parm)
 
-def cc_car(request):
+
+def cc_result(request):
     if request.method =="POST": 
         electricity_monthly = int(request.POST.get('electricity_monthly'))
         Yearly_distance_travelled_petrol = int(request.POST.get('distance_petrol'))
         Yearly_distance_travelled_diesel = int(request.POST.get('distance_disel'))
         LPG_qty = int(request.POST.get('lpg'))
+        cc_house =family_carbon_calculator(electricity_monthly,Yearly_distance_travelled_petrol,Yearly_distance_travelled_diesel,LPG_qty)
+        ls.append(cc_house)
+        parm = {"calulations":round(cc_house,2)}    
+        return render(request, 'result.html',parm)
 
-        ls.append(family_carbon_calculator(electricity_monthly,Yearly_distance_travelled_petrol,Yearly_distance_travelled_diesel,LPG_qty))
-    param = {"calulations":round(sum(ls),2)}
-    print(param)
-    return render(request, 'cc_car.html',param)
+def cc_car(request):
+
+        return render(request, 'cc_car.html')
 
 
 
 def cc_output(request):
-    return render(request, 'cc_output.html')
+    param = {'results':round(sum(ls),2)}
+    return render(request, 'cc_output.html' ,param)
 
 
 
