@@ -13,6 +13,37 @@
         background-size: cover;
         width: 1200px;
         height: 700px;
+
+    }
+    .dd{
+        padding-top:200px ;
+        padding-left:f20px ;
+        margin-left: 100px;
+        background-color: rgba(255, 255, 255, 0.559);
+        width: 400px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    li{
+        margin: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+
+    a:hover {
+        font-size: 22px;
+        color: rgb(0, 153, 255);
+
+    }
+
+    li {
+        list-style-type: none;
     }
 </style>
 {% endblock %}
@@ -22,17 +53,21 @@
 
 {% block body %}
 <div class="container_main">
-    <li>
-        <a href="{% url 'cc' %}"> Carbon Calculator</a>
-    </li>
+    <div class="links">
+        <div class="dd">
+            <li>
+                <a href="{% url 'cc' %}"> <h4>Carbon Calculator</h4></a>
+            </li>
+            <li>
+                <a href=""> <h4>Carbon Emission Trend Analysis</h4> </a>
+            </li>
+            <li>
+                <a href=""> <h4>Prediction of CO2 Emission</h4> </a>
+            </li>
 
-    <li>
-        <a href=""> Carbon Emission Trend Analysis </a>
-    </li>
-    <li>
-        <a href=""> Prediction of CO2 Emission </a>
-    </li>
+        </div>
 
+    </div>
 
 </div>
 
