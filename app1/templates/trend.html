@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block title %}Carboncalculator{% endblock %}
+{% block extra_head %}
+<style>
+    .inputs,
+    .chart,
+    .chart ,.heading{
+        display: flex;
+        justify-content: center;
+    }
+
+    .inputs h6 {
+        padding: 0px 10px;
+    }
+
+    .background {
+        background-color: rgb(205, 230, 252);
+    }
+
+    .inputs {
+        padding: 20px 0px;
+        background-color: rgb(122, 187, 122);
+    }
+
+    .buttion_submit {
+        padding: 1px 3px;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+    .chart {
+        padding: 20px 0px;
+        margin: 0px 100px;
+        background-color: rgb(194, 231, 195)
+    }
+</style>
+
+
+{% block extra_head_extended %}
+{% endblock %}
+
+{% endblock %}
+
+{% block body %}
+<div class="background">
+
+
+    <div class="inputs">
+        <form action="" method="post">
+            {% csrf_token %}
+            <label>
+                <h6>Region : </h6>
+            </label>
+            <select name="region">
+                <option value="weekly">Weekly</option>
+                <option value="daily">Daily</option>
+                
+            </select>
+            <label>
+                <h6>Country : </h6>
+            </label>
+            <select name="region">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+            </select>
+            <label>
+                <h6>Pollutants : </h6>
+            </label>
+            <select name="region">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+            </select>
+            <button class="buttion_submit" type="submit">Show Results</button>
+        </form>
+    </div>
+    <div class="chart">
+        <div class="trend_chart">
+            <div class="heading">
+                <h3>Co2 Emission</h3>
+            </div>
+            
+            <canvas id="trend" width="700px" height="350px"></canvas>
+        </div>
+
+    </div>
+
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    var ctx = document.getElementById('trend').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007],
+            datasets: [{
+                label: 'History',
+                data: [2000, 1800, 2500, 2000, 1800],
+                backgroundColor: [
+                    'rgba(54, 162, 235, 0.8)',
+                ],
+                borderColor: [
+                    'rgba(54, 162, 235, 1)',
+                ],
+                borderWidth: 1
+            },
+            {
+                label: 'Forcasted',
+                data: [2000, 1800, 2500, 2000, 1800, 2500, 2000, 1800],
+                backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                ],
+                borderColor: [
+                'rgb(255, 0, 0)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Year'
+                    }
+                },
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Co2'
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                  display: false,
+                    labels: {
+                    generateLabels: (chart) => {
+                      console.log(chart)
+                      return chart.data.labels.map(
+                        (label, index) => ({
+                          text: label,
+                          strokeStyle: chart.data.datasets[0].borderColor[index],
+                          fillStyle: chart.data.datasets[0].borderColor[index],
+                        })
+                      )
+                    }
+                  }
+                }
+              }
+            }
+          }
+    );
+</script>
+{% endblock %}
