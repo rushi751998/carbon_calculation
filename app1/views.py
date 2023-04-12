@@ -28,15 +28,20 @@ def cc_home(request):
 
 
 def cc_result(request):
+    
     if request.method =="POST": 
-        electricity_monthly = int(request.POST.get('electricity_monthly'))
-        Yearly_distance_travelled_petrol = int(request.POST.get('distance_petrol'))
-        Yearly_distance_travelled_diesel = int(request.POST.get('distance_disel'))
-        LPG_qty = int(request.POST.get('lpg'))
-        cc_house =family_carbon_calculator(electricity_monthly,Yearly_distance_travelled_petrol,Yearly_distance_travelled_diesel,LPG_qty)
-        ls.append(cc_house)
-        parm = {"calulations":round(cc_house,2)}    
-        return render(request, 'result.html',parm)
+        try :
+            electricity_monthly = int(request.POST.get('electricity_monthly'))
+            Yearly_distance_travelled_petrol = int(request.POST.get('distance_petrol'))
+            Yearly_distance_travelled_diesel = int(request.POST.get('distance_disel'))
+            LPG_qty = int(request.POST.get('lpg'))
+            cc_house =family_carbon_calculator(electricity_monthly,Yearly_distance_travelled_petrol,Yearly_distance_travelled_diesel,LPG_qty)
+            ls.append(cc_house)
+            parm = {"calulations":round(cc_house,2)}    
+            return render(request, 'result.html',parm)
+        except:
+            return render(request, 'cc_home.html',{"form":Calculator_form(),'error':'Please Fill all the Parameter'})
+
 
 def cc_car(request):
 
