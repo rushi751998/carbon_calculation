@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-
+{% block title %}Index{% endblock %}
 {% block extra_head %}
 <link rel="stylesheet" href="{% static 'css/index.css' %}">
 <style>
@@ -59,7 +59,7 @@
                 <a href="{% url 'cc' %}"> <h4>Carbon Calculator</h4></a>
             </li>
             <li>
-                <a href=""> <h4>Carbon Emission Trend Analysis</h4> </a>
+                <a href="{% url 'trend' %}"> <h4>Carbon Emission Trend Analysis</h4> </a>
             </li>
             <li>
                 <a href=""> <h4>Prediction of CO2 Emission</h4> </a>

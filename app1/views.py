@@ -61,6 +61,10 @@ def cc_industry(request):
 
 
 
+def trend(request):
+    return render(request, 'trend.html')
+
+
 # Electricity_yearly = Electricity_monthly*12
 # Electricity_yearly_emission = Electricity_yearly*0.85
 # Pertrol_Km = Yearly_distance_travelled_petrol/10
