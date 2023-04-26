@@ -1,0 +1,221 @@
+COU,Country,POL,Pollutant,VAR,Variable,YEA,Unit Code,Unit,Forecast
+AUS,Australia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,399922.128
+AUS,Australia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,399922.128
+AUS,Australia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,399922.128
+AUS,Australia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,399922.128
+AUS,Australia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,399922.128
+AUT,Austria,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,62730.823444097245
+AUT,Austria,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,62730.823444097245
+AUT,Austria,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,62730.823444097245
+AUT,Austria,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,62730.823444097245
+AUT,Austria,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,62730.823444097245
+BEL,Belgium,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,92632.83284645862
+BEL,Belgium,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,92632.81519960688
+BEL,Belgium,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,92632.81506829901
+BEL,Belgium,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,92632.15516127937
+BEL,Belgium,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,92632.3187037322
+CAN,Canada,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,534863.824
+CAN,Canada,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,534863.824
+CAN,Canada,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,534863.824
+CAN,Canada,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,534863.824
+CAN,Canada,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,534863.824
+CZE,Czech Republic,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,89975.8036371926
+CZE,Czech Republic,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,89975.98861426687
+CZE,Czech Republic,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,89975.92901776411
+CZE,Czech Republic,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,89975.94117525658
+CZE,Czech Republic,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,89975.93831375938
+DNK,Denmark,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,29948.38
+DNK,Denmark,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,29948.38
+DNK,Denmark,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,29948.38
+DNK,Denmark,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,29948.38
+DNK,Denmark,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,29948.38
+FIN,Finland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,39441.75075076845
+FIN,Finland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,39470.453093340766
+FIN,Finland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,39481.37952422889
+FIN,Finland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,39477.7737755301
+FIN,Finland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,39477.77375579831
+FRA,France,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,297899.5142933042
+FRA,France,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,298201.23325119365
+FRA,France,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,298185.8984457986
+FRA,France,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,298185.8985669146
+FRA,France,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,297563.314689833
+DEU,Germany,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,639381.013
+DEU,Germany,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,639381.013
+DEU,Germany,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,639381.013
+DEU,Germany,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,639381.013
+DEU,Germany,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,639381.013
+GRC,Greece,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,55661.157799668144
+GRC,Greece,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,55661.157799668144
+GRC,Greece,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,55661.157799668144
+GRC,Greece,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,55661.157799668144
+GRC,Greece,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,55661.157799668144
+HUN,Hungary,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,47056.894261665395
+HUN,Hungary,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,46678.262094929414
+HUN,Hungary,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,46678.262094929414
+HUN,Hungary,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,46678.262094929414
+HUN,Hungary,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,46678.39199791893
+ISL,Iceland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,3328.876003239319
+ISL,Iceland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,3328.881451948176
+ISL,Iceland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,3328.881451948176
+ISL,Iceland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,3328.881451948176
+ISL,Iceland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,3328.881451948176
+IRL,Ireland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,34935.8350387088
+IRL,Ireland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,34278.191431583764
+IRL,Ireland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,34200.88779467082
+IRL,Ireland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,34142.3034560033
+IRL,Ireland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,34106.214086097636
+ITA,Italy,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,302278.6005506665
+ITA,Italy,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,302279.5256369161
+ITA,Italy,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,302279.5256369161
+ITA,Italy,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,302279.5256369161
+ITA,Italy,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,302279.5256369161
+JPN,Japan,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,1042224.0169505669
+JPN,Japan,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,1042225.6164352576
+JPN,Japan,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,1042225.6164352576
+JPN,Japan,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,1042225.6164352576
+JPN,Japan,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,1042225.6164352576
+LUX,Luxembourg,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,7763.791581037668
+LUX,Luxembourg,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,7565.288905094371
+LUX,Luxembourg,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,7323.148271783738
+LUX,Luxembourg,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,7141.044509835695
+LUX,Luxembourg,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,6974.993156494141
+NLD,Netherlands,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,140691.86694927816
+NLD,Netherlands,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,140705.3525495335
+NLD,Netherlands,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,140702.40482590516
+NLD,Netherlands,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,140702.93111620826
+NLD,Netherlands,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,140702.93094852797
+NZL,New Zealand,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,34884.07068566687
+NZL,New Zealand,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,34884.07068566687
+NZL,New Zealand,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,34884.07068566687
+NZL,New Zealand,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,34884.07068566687
+NZL,New Zealand,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,34884.07068566687
+NOR,Norway,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,41196.76102365975
+NOR,Norway,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,41196.80091891234
+NOR,Norway,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,41196.80091891234
+NOR,Norway,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,41196.80091891234
+NOR,Norway,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,41196.80091891234
+POL,Poland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,303598.36901792785
+POL,Poland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,303598.36901792785
+POL,Poland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,303598.36901792785
+POL,Poland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,303598.36901792785
+POL,Poland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,303598.36901792785
+PRT,Portugal,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,41652.78620906029
+PRT,Portugal,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,41506.196139580694
+PRT,Portugal,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,41360.12196952649
+PRT,Portugal,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,41214.56188327522
+PRT,Portugal,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,41069.51407159427
+SVK,Slovak Republic,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,30757.2544479433
+SVK,Slovak Republic,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,30814.129134795607
+SVK,Slovak Republic,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,30804.45616090419
+SVK,Slovak Republic,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,30806.08936992238
+SVK,Slovak Republic,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,30805.817076882857
+ESP,Spain,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,196285.863645794
+ESP,Spain,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,198729.13601517768
+ESP,Spain,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,194400.16399837547
+ESP,Spain,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,194517.30334675146
+ESP,Spain,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,195037.71793250262
+SWE,Sweden,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,36551.26460944701
+SWE,Sweden,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,36506.60937499804
+SWE,Sweden,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,36409.03933537695
+SWE,Sweden,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,36325.509253349155
+SWE,Sweden,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,36173.01309708577
+CHE,Switzerland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,35073.50650796308
+CHE,Switzerland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,35073.50553078562
+CHE,Switzerland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,35073.50617428587
+CHE,Switzerland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,35073.50558243943
+CHE,Switzerland,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,35072.90340416861
+TUR,Türkiye,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,413433.085
+TUR,Türkiye,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,413433.085
+TUR,Türkiye,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,413433.085
+TUR,Türkiye,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,413433.085
+TUR,Türkiye,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,413433.085
+GBR,United Kingdom,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,325695.89040210133
+GBR,United Kingdom,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,322491.33446636697
+GBR,United Kingdom,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,321636.04277751874
+GBR,United Kingdom,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,320375.2672614251
+GBR,United Kingdom,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,318614.60881622974
+USA,United States,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,4718411.289783361
+USA,United States,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,4718411.289783361
+USA,United States,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,4718411.289783361
+USA,United States,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,4718411.289783361
+USA,United States,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,4718411.289783361
+EST,Estonia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,8434.241642414398
+EST,Estonia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,7871.232419889626
+EST,Estonia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,7345.805637860026
+EST,Estonia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,6855.452563294121
+EST,Estonia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,6377.592135846605
+RUS,Russia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,1624562.3373449398
+RUS,Russia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,1624562.3373449398
+RUS,Russia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,1624562.3373449398
+RUS,Russia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,1624562.3373449398
+RUS,Russia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,1624562.3373449398
+SVN,Slovenia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,12872.158501063186
+SVN,Slovenia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,12872.158501063186
+SVN,Slovenia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,12872.158501063186
+SVN,Slovenia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,12872.158501063186
+SVN,Slovenia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,12872.158501063186
+LVA,Latvia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,6997.390986695148
+LVA,Latvia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,6997.390986695149
+LVA,Latvia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,6997.390986695149
+LVA,Latvia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,6997.390986695149
+LVA,Latvia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,6997.390986695149
+LTU,Lithuania,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,13654.499940997614
+LTU,Lithuania,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,13654.499940997614
+LTU,Lithuania,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,13654.499940997614
+LTU,Lithuania,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,13654.499940997614
+LTU,Lithuania,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,13654.499940997614
+ROU,Romania,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,77840.8096765002
+ROU,Romania,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,78093.59329805111
+ROU,Romania,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,77922.91464910861
+ROU,Romania,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,77834.84954503145
+ROU,Romania,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,77924.43788609935
+CYP,Cyprus,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,7269.945997007399
+CYP,Cyprus,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,7269.945997007399
+CYP,Cyprus,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,7269.945997007399
+CYP,Cyprus,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,7269.945997007399
+CYP,Cyprus,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,7269.945997007399
+KAZ,Kazakhstan,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,278908.1952152686
+KAZ,Kazakhstan,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,278563.9638256507
+KAZ,Kazakhstan,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,278219.7324360328
+KAZ,Kazakhstan,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,277875.5010464149
+KAZ,Kazakhstan,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,277531.269656797
+MLT,Malta,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,1599.5760007393508
+MLT,Malta,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,1599.5760007393508
+MLT,Malta,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,1599.5760007393508
+MLT,Malta,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,1599.5760007393508
+MLT,Malta,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,1599.5760007393508
+HRV,Croatia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,16875.459384732618
+HRV,Croatia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,16875.459384732618
+HRV,Croatia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,16875.459384732618
+HRV,Croatia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,16875.459384732618
+HRV,Croatia,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,16875.459384732618
+BGR,Bulgaria,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,38495.759151406404
+BGR,Bulgaria,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,38514.60843046378
+BGR,Bulgaria,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,38514.60843046378
+BGR,Bulgaria,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,38514.60843046378
+BGR,Bulgaria,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,38514.60843046378
+UKR,Ukraine,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,207016.97607816785
+UKR,Ukraine,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,207016.97607816785
+UKR,Ukraine,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,207016.97607816785
+UKR,Ukraine,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,207016.97607816785
+UKR,Ukraine,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,207016.97607816785
+BLR,Belarus,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,51603.971000000005
+BLR,Belarus,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,48838.951000000015
+BLR,Belarus,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,47103.57397804994
+BLR,Belarus,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,45535.025924152156
+BLR,Belarus,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,43922.44864980559
+LIE,Liechtenstein,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,143.23604002049953
+LIE,Liechtenstein,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,143.23604000258203
+LIE,Liechtenstein,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,143.23604001934677
+LIE,Liechtenstein,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,143.23604001725067
+LIE,Liechtenstein,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,143.23604001688847
+MCO,Monaco,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,60.789
+MCO,Monaco,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,60.789
+MCO,Monaco,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,60.789
+MCO,Monaco,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,60.789
+MCO,Monaco,CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,60.789
+EU27_2020,European Union – 27 countries (from 01/02/2020),CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2021,T_CO2_EQVT,Tonnes of CO2 equivalent,2643409.6573371654
+EU27_2020,European Union – 27 countries (from 01/02/2020),CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2022,T_CO2_EQVT,Tonnes of CO2 equivalent,2643409.6573371654
+EU27_2020,European Union – 27 countries (from 01/02/2020),CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2023,T_CO2_EQVT,Tonnes of CO2 equivalent,2643409.6573371654
+EU27_2020,European Union – 27 countries (from 01/02/2020),CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2024,T_CO2_EQVT,Tonnes of CO2 equivalent,2643409.6573371654
+EU27_2020,European Union – 27 countries (from 01/02/2020),CO2,Carbon dioxide,TOTAL,Total  emissions excluding LULUCF,2025,T_CO2_EQVT,Tonnes of CO2 equivalent,2643409.6573371654

@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse, redirect
 from .forms import Calculator_form
+import pandas as pd
 
 
 def index(request):
@@ -30,8 +31,10 @@ def cc_home(request):
 def cc_result(request):
     
     if request.method =="POST": 
+        form = Calculator_form(request.GET)
         try :
             electricity_monthly = int(request.POST.get('electricity_monthly'))
+            form = Calculator_form(request.GET)
             Yearly_distance_travelled_petrol = int(request.POST.get('distance_petrol'))
             Yearly_distance_travelled_diesel = int(request.POST.get('distance_disel'))
             LPG_qty = int(request.POST.get('lpg'))
@@ -59,10 +62,65 @@ def cc_output(request):
 def cc_industry(request):
     return render(request, 'cc_industry.html')
 
+def get_trend_df():
+    raw = pd.read_csv('/config/workspace/raw.csv')
+    forcasted = pd.read_csv('/config/workspace/foracsed.csv')
+    return raw,forcasted
 
 
 def trend(request):
-    return render(request, 'trend.html')
+    raw ,forcasted =get_trend_df()
+    filtered =raw[(raw['Country']=='Australia')& (raw['Pollutant']=='Carbon dioxide')&(raw['Variable'] =='Total  emissions excluding LULUCF')][['Year','Value']]
+    forcasted =forcasted[(forcasted['Country']=='Australia')& (forcasted['Pollutant']=='Carbon dioxide')&(forcasted['Variable'] =='Total  emissions excluding LULUCF')][['YEA','Forecast']] 
+    # print(forcasted)
+    # if request.method == "POST":
+    #     region = request.POST.get('region')
+    #     country = request.POST.get('country')
+    #     pollutant = request.POST.get('pollutants')
+    #     # print(region)
+    #     # print(country)
+    #     # print(pollutant)
+    #     year = raw['Year'].unique()
+    #     filtered =raw[(raw['Country']==country)& (raw['Pollutant']==pollutant)&(raw['Variable'] =='Total  emissions excluding LULUCF')][['Year','Value']] 
+    
+    param = {
+        'region':raw['COU'].unique(),
+        'country':raw['Country'].unique(),
+        'pollutant':raw['Pollutant'].unique(),
+        # 'year':[1,2,3,4],
+        # 'co2':[65,23,65,23]
+        'year':filtered['Year'].values,
+        'co2':filtered['Value'].values,
+        'forcasted_year':forcasted['YEA'].values,
+        'forcasted_co2':forcasted['Forecast'].values ,
+    }
+
+    return render(request, 'trend.html',param)
+
+
+def forcasted_trend(request):
+    raw ,forcasted =get_trend_df()
+    filtered =raw[(raw['Country']=='Australia')& (raw['Pollutant']=='Carbon dioxide')&(raw['Variable'] =='Total  emissions excluding LULUCF')][['Year','Value']]
+    forcasted =forcasted[(forcasted['Country']=='Australia')& (forcasted['Pollutant']=='Carbon dioxide')&(forcasted['Variable'] =='Total  emissions excluding LULUCF')][['YEA','Forecast']] 
+    # print(forcasted)
+    if request.method == "POST":
+        region = request.POST.get('region')
+        country = request.POST.get('country')
+        pollutant = request.POST.get('pollutants')
+
+        year = raw['Year'].unique()
+        filtered =raw[(raw['Country']==country)& (raw['Pollutant']==pollutant)&(raw['Variable'] =='Total  emissions excluding LULUCF')][['Year','Value']] 
+        # print(filtered)
+
+    param = {
+
+        'year':filtered['Year'].values,
+        'co2':filtered['Value'].values,
+        'forcasted_year':forcasted['YEA'].values,
+        'forcasted_co2':forcasted['Forecast'].values ,
+    }
+
+    return render(request, 'forcasted_trend.html',param)
 
 
 # Electricity_yearly = Electricity_monthly*12

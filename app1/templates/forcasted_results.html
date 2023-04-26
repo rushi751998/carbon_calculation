@@ -1,0 +1,45 @@
+{% extends 'trend.html' %}
+{% load static %}
+
+{% block scripts %}
+<script>var ctx = document.getElementById('trend').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: [{% for i in year %}  '{{ i }}',  {% endfor %},{% for i in forcasted_year %}  '{{ i }}',  {% endfor %}],
+    datasets: [{
+      label: 'Actual ',
+      data: [{% for i in co2 %}  {{ i }}, {% endfor %}],
+      backgroundColor: 'rgba(54, 162, 235, 0.8)',
+      borderColor: 'rgba(54, 162, 235, 0.8)',
+          tenssion: 0.4
+            },
+            {
+      label: 'Forcasted',
+      data: [{% for i in co2 %}  {{ i }}, {% endfor %},{% for i in forcasted_co2 %}  {{ i }}, {% endfor %}],
+      backgroundColor: 'rgba(255, 99, 132, 0.8)',
+      borderColor: 'rgba(555, 99, 132, 1)',
+          tenssion: 0.4
+            }]
+        },
+    options: {
+      scales: {
+        x: {
+          beginAtZero: true,
+          title:{
+            display:true,
+            text: 'Year'
+          }
+        },
+        y: {
+          beginAtZero: true,
+          title:{
+            display:true,
+            text: 'Co2 Emission'
+          }
+        }
+      }
+    }
+    });
+</script>
+{% endblock %}

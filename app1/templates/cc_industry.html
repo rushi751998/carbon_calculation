@@ -2,7 +2,94 @@
 {% load static %}
 
 {% block calculator %}
-<h1>
-    Industry
-</h1>
+<form action="result" method="post">
+    {% csrf_token %}
+    <div class="row">
+        <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list"
+                    href="#list-home" role="tab" aria-controls="list-home">Home</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
+                    href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
+                    href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
+                    href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    <div class="card" style="width: 35rem;">
+                        <div class="card-body">
+                            <table>
+
+                                <tr>
+                                    <td>Electricity Consumption</td>
+                                    <td><input type="text" id="electricity_monthly" name="electricity_monthly"></td>
+                                    <td>
+                                        <select name="" id="electricity_monthly_unit">
+                                            <option value="kwh">kwh</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Fule Consumption - Petrol</td>
+                                    <td><input type="text" id="distance_petrol" name="distance_petrol"></td>
+                                    <td>
+                                        <select name="" id="distance_petrol_unit">
+                                            <option value="km">km</option>
+                                            <option value="miles">miles</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Fule Consumption - Diesel</td>
+                                    <td><input type="text" id="distance_disel" name="distance_disel"></td>
+                                    <td>
+                                        <select name="" id="distance_disel_unit">
+                                            <option value="km">km</option>
+                                            <option value="miles">miles</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td> LPG Usage </td>
+                                    <td><input type="text" id="lpg" name="lpg"></td>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="">Qty</option>
+                                            <option value="">KG</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <h5>{{error}}</h5>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...
+                </div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...
+                </div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- 
+     <button onclick="store()" class="input" type="submit" value="Submit">Submit</button>
+</form> -->
 {% endblock %}

@@ -9,12 +9,3 @@ class Calculator_form(forms.Form):
 	LPG_qty = forms.IntegerField(required=False)
 
 
-
-
-# class Calculator_form(forms.Form):
-    # Electricity_monthly = forms.IntegerField()
-
-    
-    # class Meta:
-    #     model=Calculator_form
-    #     fields ="__all__"t44hrt
