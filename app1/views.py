@@ -60,11 +60,18 @@ def cc_output(request):
 
 
 def cc_industry(request):
-    return render(request, 'cc_industry.html')
+    param = {
+    'admimistratation':('Electricity_yearly_emission' , 'WaterWaste_Yearly_emission','Solidwaste_yearly_emission','GeneratorGrid_Yearly_emission','GeneratorDiesel_Yearly_emission'),
+    "transport" :['Bus_yearly_emission','Car_Yearly_emission','Bike125_Yearly_emission','Bike500_Yearly_emission'],
+    'Appliances':('Desktop_Yearly_emission','SmartPhone_Yearly_emission','Print_Yearly_emission','Laptop_Yearly_emission','Projector_Yearly_emission')
+     }
+
+   
+    return render(request, 'cc_industry.html',param)
 
 def get_trend_df():
-    raw = pd.read_csv('/config/workspace/raw.csv')
-    forcasted = pd.read_csv('/config/workspace/foracsed.csv')
+    raw = pd.read_csv('raw.csv')
+    forcasted = pd.read_csv('foracsed.csv')
     return raw,forcasted
 
 
@@ -131,3 +138,29 @@ def forcasted_trend(request):
 # Diesel_Emission = Diesel_Km*2.653
 # LPG_yearly_Emission = LPG_qty * 2.983
 # Carbon_Footprint = (Electricity_yearly_emission + Petrol_Emission + Diesel_Emission + LPG_yearly_Emission)/1000
+
+def Industrial_carbon_calculator(Electricity_yearly,WaterWaste_Yearly,SolidWaste_Yearly,Bus_Yearly,car_Yearly,Bike125_Yearly,Bike500_Yearly,Desktop_Count,SmartPhone_Count,Print_Yearly,Laptop_Yearly,GeneratorGrid_Yearly,GeneratorDiesel_Yearly,LPG_qty,Projector_Yearly):
+    #Administration
+    Electricity_yearly_emission = Electricity_yearly*0.00085
+    WaterWaste_Yearly_emission=WaterWaste_Yearly*0.000298
+    Solidwaste_yearly_emission=SolidWaste_Yearly*0.000165
+    GeneratorGrid_Yearly_emission=GeneratorGrid_Yearly*0.37
+    GeneratorDiesel_Yearly_emission=GeneratorDiesel_Yearly*0.79
+    LPG_yearly_Emission = LPG_qty * 0.002983
+    #Transport
+    Bus_yearly_emission=Bus_Yearly*0.000096
+    Car_Yearly_emission=car_Yearly*0.000149
+    Bike125_Yearly_emission=Bike125_Yearly*0.0001
+    Bike500_Yearly_emission=Bike500_Yearly*0.00013237
+    #Appliances
+    Desktop_Yearly_emission=Desktop_Count*0.778
+    SmartPhone_Yearly_emission=SmartPhone_Count*0.063
+    Print_Yearly_emission=Print_Yearly*0.000001027
+    Laptop_Yearly_emission=Laptop_Yearly*0.10562
+    Projector_Yearly_emission=Projector_Yearly*0.001
+    Carbon_Footprint=(Electricity_yearly_emission + WaterWaste_Yearly_emission + Solidwaste_yearly_emission 
+                        + Bus_yearly_emission + Car_Yearly_emission + Bike125_Yearly_emission 
+                        + Bike500_Yearly_emission + Desktop_Yearly_emission + SmartPhone_Yearly_emission 
+                        + Print_Yearly_emission +Laptop_Yearly_emission + GeneratorGrid_Yearly_emission 
+                        + GeneratorDiesel_Yearly_emission+LPG_yearly_Emission + Projector_Yearly_emission)
+    return Carbon_Footprint
