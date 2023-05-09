@@ -59,7 +59,7 @@
                     {% csrf_token %}
                     <table>
                         <tr>
-                            <td>what is the Amount of Electricity consumed every year in KW?</td>
+                            <td>How much amount of Electricity consumed every year in KW?</td>
                             <td><input type="text" id="electricity_monthly" name="electricity_monthly"></td>
                             <td>
                                 <select name="" id="electricity_monthly_unit">
@@ -69,7 +69,7 @@
                         </tr>
 
                         <tr>
-                            <td>What is the amount of water wastage in year in Liters?</td>
+                            <td>How much Waste Water consumed per liters/per year ?</td>
                             <td><input type="text" id="distance_petrol" name="distance_petrol"></td>
                             <td>
                                 <select name="" id="distance_petrol_unit">
@@ -80,17 +80,17 @@
                         </tr>
 
                         <tr>
-                            <td>Can U specifiy the amount of area allotted with Air Condintioner in Sq.ft?</td>
+                            <td>Can you specify the amount of area allotted with Air Conditioner in Sq.ft?</td>
                             <td><input type="text" id="distance_disel" name="distance_disel"></td>
                             <td>
                                 <select name="" id="distance_disel_unit">
-                                    <option value="km">km</option>
-                                    <option value="miles">miles</option>
+                                    <option value="km">Sq.ft</option>
+                                    <!-- <option value="miles">miles</option> -->
                                 </select>
                             </td>
                         </tr>
 
-                        <tr>
+                        <!-- <tr>
                             <td> Can U specifiy the amount of area allotted with Air Condintioner in Sq.ft?</td>
                             <td><input type="text" id="lpg" name="lpg"></td>
                             <td>
@@ -99,16 +99,14 @@
                                     <option value="">KG</option>
                                 </select>
                             </td>
-                        </tr>
+                        </tr> -->
 
                     </table>
 
                 </div>
                 <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-
-                    {% csrf_token %}
                     <table>
-                        <tr>
+                        <!-- <tr>
                             <td>What is mode of Transport ?</td>
                             <td><input type="text" id="electricity_monthly" name="electricity_monthly"></td>
                             <td>
@@ -116,10 +114,10 @@
                                     <option value="kwh">kwh</option>
                                 </select>
                             </td>
-                        </tr>
+                        </tr> -->
 
                         <tr>
-                            <td>if Bus how many Kms average in a Year?</td>
+                            <td>Bus : How much travel distance in Kms (average) per year?</td>
                             <td><input type="text" id="distance_petrol" name="distance_petrol"></td>
                             <td>
                                 <select name="" id="distance_petrol_unit">
@@ -130,7 +128,7 @@
                         </tr>
 
                         <tr>
-                            <td>if taxi how many Kms average in a Year?</td>
+                            <td>Cab/Taxi : How much travel distance in Kms (average) per year?</td>
                             <td><input type="text" id="distance_disel" name="distance_disel"></td>
                             <td>
                                 <select name="" id="distance_disel_unit">
@@ -141,22 +139,24 @@
                         </tr>
 
                         <tr>
-                            <td>if Bike(<125cc) how many Kms average in a Year?</td>
+                            <td>Bike(<125cc) : How much travel distance in Kms (average) per year?</td>
                             <td><input type="text" id="lpg" name="lpg"></td>
                             <td>
                                 <select name="" id="">
-                                    <option value="">Qty</option>
-                                    <option value="">KG</option>
+                                    <option value="">Km</option>
+                                    <option value="miles">miles</option>
+
                                 </select>
                             </td>
                         </tr>
                         <tr>
-                            <td>if Bike(>125cc & 500cc) how many Kms average in a Year?</td>
+                            <td>Bike(>125cc & 500cc):How much travel distance in Kms (average) per year?</td>
                             <td><input type="text" id="lpg" name="lpg"></td>
                             <td>
                                 <select name="" id="">
-                                    <option value="">Qty</option>
-                                    <option value="">KG</option>
+                                    <option value="">Km</option>
+                                    <option value="miles">miles</option>
+                                    
                                 </select>
                             </td>
                         </tr>
@@ -166,15 +166,13 @@
 
                 </div>
                 <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-
-                    {% csrf_token %}
                     <table>
                         <tr>
                             <td>How many desktops in the company?</td>
                             <td><input type="text" id="electricity_monthly" name="electricity_monthly"></td>
                             <td>
                                 <select name="" id="electricity_monthly_unit">
-                                    <option value="kwh">kwh</option>
+                                    <option value="kwh">Qty</option>
                                 </select>
                             </td>
                         </tr>
@@ -184,8 +182,8 @@
                             <td><input type="text" id="distance_petrol" name="distance_petrol"></td>
                             <td>
                                 <select name="" id="distance_petrol_unit">
-                                    <option value="km">km</option>
-                                    <option value="miles">miles</option>
+                                    <option value="km">Qty</option>
+                                    <!-- <option value="miles">miles</option> -->
                                 </select>
                             </td>
                         </tr>
@@ -195,8 +193,8 @@
                             <td><input type="text" id="distance_disel" name="distance_disel"></td>
                             <td>
                                 <select name="" id="distance_disel_unit">
-                                    <option value="km">km</option>
-                                    <option value="miles">miles</option>
+                                    <option value="km">Qty</option>
+                                    <!-- <option value="miles">miles</option> -->
                                 </select>
                             </td>
                         </tr>
@@ -207,7 +205,7 @@
                             <td>
                                 <select name="" id="">
                                     <option value="">Qty</option>
-                                    <option value="">KG</option>
+                                    <!-- <option value="">KG</option> -->
                                 </select>
                             </td>
                         </tr>
@@ -217,8 +215,8 @@
                             <td><input type="text" id="lpg" name="lpg"></td>
                             <td>
                                 <select name="" id="">
-                                    <option value="">Qty</option>
-                                    <option value="">KG</option>
+                                    <option value="">Hr>
+                                    <!-- <option value="">KG</option> -->
                                 </select>
                             </td>
                         </tr>
