@@ -67,7 +67,13 @@ def cc_industry(request):
      }
 
    
-    return render(request, 'cc_industry.html',param)
+    return render(request, 'industry_result.html',param)
+
+def cc_result_industry(request):
+    param  = {}
+        
+    return render(request, 'industry_resul.html',param)
+
 
 def get_trend_df():
     raw = pd.read_csv('raw.csv')

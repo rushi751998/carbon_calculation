@@ -1,5 +1,5 @@
-{% extends 'cc.html' %}
-{% load static %}
+    {% extends 'cc.html' %}
+    {% load static %}
 {% block extra_head_extended %}
 <style>
     td {
@@ -35,7 +35,7 @@
 
 
 {% block calculator %}
-<form action="result" method="post">
+<form action="cc_industry_result" method="post">
     {% csrf_token %}
     <div class="row">
         <div class="col-4">
@@ -60,7 +60,7 @@
                     <table>
                         <tr>
                             <td>How much amount of Electricity consumed every year in KW?</td>
-                            <td><input type="text" id="electricity_monthly" name="electricity_monthly"></td>
+                            <td><input type="text" id="electricity_monthly" name="Electricity_consumed"></td>
                             <td>
                                 <select name="" id="electricity_monthly_unit">
                                     <option value="kwh">kwh</option>
@@ -81,7 +81,7 @@
 
                         <tr>
                             <td>Can you specify the amount of area allotted with Air Conditioner in Sq.ft?</td>
-                            <td><input type="text" id="distance_disel" name="distance_disel"></td>
+                            1<td><input type="text" id="distance_disel" name="distance_disel"></td>
                             <td>
                                 <select name="" id="distance_disel_unit">
                                     <option value="km">Sq.ft</option>
