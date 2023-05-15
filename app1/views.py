@@ -67,12 +67,61 @@ def cc_industry(request):
      }
 
    
-    return render(request, 'industry_result.html',param)
+    return render(request, 'cc_industry.html',param)
+
+def Industrial_carbon_calculator(Electricity_yearly,WaterWaste_Yearly,SolidWaste_Yearly,Bus_Yearly,car_Yearly,Bike125_Yearly,Bike500_Yearly,Desktop_Count,SmartPhone_Count,Print_Yearly,Laptop_Yearly,GeneratorGrid_Yearly,GeneratorDiesel_Yearly,LPG_qty,Projector_Yearly):
+    #Administration
+    Electricity_yearly_emission = Electricity_yearly*0.00085
+    WaterWaste_Yearly_emission=WaterWaste_Yearly*0.000298
+    Solidwaste_yearly_emission=SolidWaste_Yearly*0.000165
+    GeneratorGrid_Yearly_emission=GeneratorGrid_Yearly*0.37
+    GeneratorDiesel_Yearly_emission=GeneratorDiesel_Yearly*0.79
+    LPG_yearly_Emission = LPG_qty * 0.002983
+    #Transport
+    Bus_yearly_emission=Bus_Yearly*0.000096
+    Car_Yearly_emission=car_Yearly*0.000149
+    Bike125_Yearly_emission=Bike125_Yearly*0.0001
+    Bike500_Yearly_emission=Bike500_Yearly*0.00013237
+    #Appliances
+    Desktop_Yearly_emission=Desktop_Count*0.778
+    SmartPhone_Yearly_emission=SmartPhone_Count*0.063
+    Print_Yearly_emission=Print_Yearly*0.000001027
+    Laptop_Yearly_emission=Laptop_Yearly*0.10562
+    Projector_Yearly_emission=Projector_Yearly*0.001
+    Carbon_Footprint=(Electricity_yearly_emission + WaterWaste_Yearly_emission + Solidwaste_yearly_emission 
+                        + Bus_yearly_emission + Car_Yearly_emission + Bike125_Yearly_emission 
+                        + Bike500_Yearly_emission + Desktop_Yearly_emission + SmartPhone_Yearly_emission 
+                        + Print_Yearly_emission +Laptop_Yearly_emission + GeneratorGrid_Yearly_emission 
+                        + GeneratorDiesel_Yearly_emission+LPG_yearly_Emission + Projector_Yearly_emission)
+    return Carbon_Footprint
+
+
 
 def cc_result_industry(request):
-    param  = {}
+    # ac_area_allotted = (request.POST.get('ac_area_allotted'))
+    Electricity_yearly =int(request.POST.get('Electricity_consumed'))
+    WaterWaste_Yearly = int(request.POST.get('Water_consumed'))
+    SolidWaste_Yearly = int(request.POST.get('SolidWaste_Yearly'))
+    Bus_Yearly = 0
+    car_Yearly = 0
+    Bike125_Yearly = 0
+    Bike500_Yearly = int(request.POST.get('bike500'))
+    Desktop_Count = int(request.POST.get('desktops'))
+    SmartPhone_Count = int(request.POST.get('smart_phone'))
+    Print_Yearly = int(request.POST.get('prints'))
+    Laptop_Yearly =int(request.POST.get('laptops_less_four'))
+    GeneratorGrid_Yearly = int(request.POST.get('GeneratorGrid_Yearly'))
+    GeneratorDiesel_Yearly = int(request.POST.get('GeneratorDiesel_Yearly'))
+    LPG_qty = int(request.POST.get('lpg_qty'))
+    Projector_Yearly = int(request.POST.get('projector_hr'))
+    
+
+    a = Industrial_carbon_calculator(Electricity_yearly,WaterWaste_Yearly,SolidWaste_Yearly,Bus_Yearly,car_Yearly,Bike125_Yearly,Bike500_Yearly,Desktop_Count,SmartPhone_Count,Print_Yearly,Laptop_Yearly,GeneratorGrid_Yearly,GeneratorDiesel_Yearly,LPG_qty,Projector_Yearly)
+    param  = {'result':round(a,2)}
+    print(a)
+    # param  = {'result':type((Electricity_yearly))}
         
-    return render(request, 'industry_resul.html',param)
+    return render(request, 'industry_resul.html',param) 
 
 
 def get_trend_df():

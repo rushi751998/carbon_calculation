@@ -1,5 +1,5 @@
-    {% extends 'cc.html' %}
-    {% load static %}
+{% extends 'cc.html' %}
+{% load static %}
 {% block extra_head_extended %}
 <style>
     td {
@@ -70,7 +70,18 @@
 
                         <tr>
                             <td>How much Waste Water consumed per liters/per year ?</td>
-                            <td><input type="text" id="distance_petrol" name="distance_petrol"></td>
+                            <td><input type="text" id="distance_petrol" name="Water_consumed"></td>
+                            <td>
+                                <select name="" id="distance_petrol_unit">
+                                    <option value="km">km</option>
+                                    <option value="miles">miles</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>How much solid Wast consumed per year ?</td>
+                            <td><input type="text" id="distance_petrol" name="SolidWaste_Yearly"></td>
                             <td>
                                 <select name="" id="distance_petrol_unit">
                                     <option value="km">km</option>
@@ -81,10 +92,42 @@
 
                         <tr>
                             <td>Can you specify the amount of area allotted with Air Conditioner in Sq.ft?</td>
-                            1<td><input type="text" id="distance_disel" name="distance_disel"></td>
+                            <td><input type="text" id="distance_disel" name="ac_area_allotted"></td>
                             <td>
                                 <select name="" id="distance_disel_unit">
                                     <option value="km">Sq.ft</option>
+                                    <!-- <option value="miles">miles</option> -->
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>How much amount of electricity genrated by grid ?</td>
+                            <td><input type="text" id="distance_disel" name="GeneratorGrid_Yearly"></td>
+                            <td>
+                                <select name="" id="distance_disel_unit">
+                                    <option value="km">/Yr</option>
+                                    <!-- <option value="miles">miles</option> -->
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>How much amount of electricity genrated by disel ?</td>
+                            <td><input type="text" id="distance_disel" name="GeneratorDiesel_Yearly"></td>
+                            <td>
+                                <select name="" id="distance_disel_unit">
+                                    <option value="km">/Yr</option>
+                                    <!-- <option value="miles">miles</option> -->
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>How much LPG cylinders used ?</td>
+                            <td><input type="text" id="distance_disel" name="lpg_qty"></td>
+                            <td>
+                                <select name="" id="distance_disel_unit">
+                                    <option value="km">Qty</option>
                                     <!-- <option value="miles">miles</option> -->
                                 </select>
                             </td>
@@ -118,7 +161,7 @@
 
                         <tr>
                             <td>Bus : How much travel distance in Kms (average) per year?</td>
-                            <td><input type="text" id="distance_petrol" name="distance_petrol"></td>
+                            <td><input type="text" id="distance_petrol" name="distance_bus"></td>
                             <td>
                                 <select name="" id="distance_petrol_unit">
                                     <option value="km">km</option>
@@ -129,7 +172,7 @@
 
                         <tr>
                             <td>Cab/Taxi : How much travel distance in Kms (average) per year?</td>
-                            <td><input type="text" id="distance_disel" name="distance_disel"></td>
+                            <td><input type="text" id="distance_disel" name="distance_cab"></td>
                             <td>
                                 <select name="" id="distance_disel_unit">
                                     <option value="km">km</option>
@@ -139,8 +182,10 @@
                         </tr>
 
                         <tr>
-                            <td>Bike(<125cc) : How much travel distance in Kms (average) per year?</td>
-                            <td><input type="text" id="lpg" name="lpg"></td>
+                            <td>Bike(125cc) : How much travel distance in Kms (average) per year?</td>
+                            <!-- <td><input type="text" id="lpg" name=""></td> -->
+                            <td><input type="text" id="lpg" name="bike_125"></td>
+
                             <td>
                                 <select name="" id="">
                                     <option value="">Km</option>
@@ -151,12 +196,12 @@
                         </tr>
                         <tr>
                             <td>Bike(>125cc & 500cc):How much travel distance in Kms (average) per year?</td>
-                            <td><input type="text" id="lpg" name="lpg"></td>
+                            <td><input type="text" id="lpg" name="bike500"></td>
                             <td>
                                 <select name="" id="">
                                     <option value="">Km</option>
                                     <option value="miles">miles</option>
-                                    
+
                                 </select>
                             </td>
                         </tr>
@@ -169,7 +214,7 @@
                     <table>
                         <tr>
                             <td>How many desktops in the company?</td>
-                            <td><input type="text" id="electricity_monthly" name="electricity_monthly"></td>
+                            <td><input type="text" id="electricity_monthly" name="desktops"></td>
                             <td>
                                 <select name="" id="electricity_monthly_unit">
                                     <option value="kwh">Qty</option>
@@ -179,7 +224,7 @@
 
                         <tr>
                             <td>How many smart phone in the Company?</td>
-                            <td><input type="text" id="distance_petrol" name="distance_petrol"></td>
+                            <td><input type="text" id="distance_petrol" name="smart_phone"></td>
                             <td>
                                 <select name="" id="distance_petrol_unit">
                                     <option value="km">Qty</option>
@@ -190,7 +235,7 @@
 
                         <tr>
                             <td>How many prints are taken in a Year?</td>
-                            <td><input type="text" id="distance_disel" name="distance_disel"></td>
+                            <td><input type="text" id="distance_disel" name="prints"></td>
                             <td>
                                 <select name="" id="distance_disel_unit">
                                     <option value="km">Qty</option>
@@ -201,7 +246,7 @@
 
                         <tr>
                             <td> How many laptops are there which are aged <=4 years?</td>
-                            <td><input type="text" id="lpg" name="lpg"></td>
+                            <td><input type="text" id="lpg" name="laptops_less_four"></td>
                             <td>
                                 <select name="" id="">
                                     <option value="">Qty</option>
@@ -212,10 +257,10 @@
 
                         <tr>
                             <td> How many hours you utilizes projector in a Year?</td>
-                            <td><input type="text" id="lpg" name="lpg"></td>
+                            <td><input type="text" id="lpg" name="projector_hr"></td>
                             <td>
                                 <select name="" id="">
-                                    <option value="">Hr</option> 
+                                    <option value="">Hr</option>
                                     <!-- <option value="">KG</option> -->
                                 </select>
                             </td>
@@ -231,7 +276,13 @@
         </div>>
     </div>
 </form>
-<!-- 
-     <button onclick="store()" class="input" type="submit" value="Submit">Submit</button>
-</form> -->
+
+
+<div class="result">
+    <h1>{% block result %}
+        {% endblock %}
+    </h1>
+</div>
+
+
 {% endblock %}
