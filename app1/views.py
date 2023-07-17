@@ -110,13 +110,13 @@ def cc_result_industry(request):
     SmartPhone_Count = int(request.POST.get('smart_phone'))
     Print_Yearly = int(request.POST.get('prints'))
     Laptop_Yearly =int(request.POST.get('laptops_less_four'))
-    GeneratorGrid_Yearly = int(request.POST.get('GeneratorGrid_Yearly'))
+    # GeneratorGrid_Yearly = int(request.POST.get('GeneratorGrid_Yearly'))
     GeneratorDiesel_Yearly = int(request.POST.get('GeneratorDiesel_Yearly'))
     LPG_qty = int(request.POST.get('lpg_qty'))
     Projector_Yearly = int(request.POST.get('projector_hr'))
     
 
-    a = Industrial_carbon_calculator(Electricity_yearly,WaterWaste_Yearly,SolidWaste_Yearly,Bus_Yearly,car_Yearly,Bike125_Yearly,Bike500_Yearly,Desktop_Count,SmartPhone_Count,Print_Yearly,Laptop_Yearly,GeneratorGrid_Yearly,GeneratorDiesel_Yearly,LPG_qty,Projector_Yearly)
+    a = Industrial_carbon_calculator(Electricity_yearly,WaterWaste_Yearly,SolidWaste_Yearly,Bus_Yearly,car_Yearly,Bike125_Yearly,Bike500_Yearly,Desktop_Count,SmartPhone_Count,Print_Yearly,Laptop_Yearly,GeneratorDiesel_Yearly,LPG_qty,Projector_Yearly)
     param  = {'result':round(a,2)}
     print(a)
     # param  = {'result':type((Electricity_yearly))}
@@ -194,12 +194,12 @@ def forcasted_trend(request):
 # LPG_yearly_Emission = LPG_qty * 2.983
 # Carbon_Footprint = (Electricity_yearly_emission + Petrol_Emission + Diesel_Emission + LPG_yearly_Emission)/1000
 
-def Industrial_carbon_calculator(Electricity_yearly,WaterWaste_Yearly,SolidWaste_Yearly,Bus_Yearly,car_Yearly,Bike125_Yearly,Bike500_Yearly,Desktop_Count,SmartPhone_Count,Print_Yearly,Laptop_Yearly,GeneratorGrid_Yearly,GeneratorDiesel_Yearly,LPG_qty,Projector_Yearly):
+def Industrial_carbon_calculator(Electricity_yearly,WaterWaste_Yearly,SolidWaste_Yearly,Bus_Yearly,car_Yearly,Bike125_Yearly,Bike500_Yearly,Desktop_Count,SmartPhone_Count,Print_Yearly,Laptop_Yearly,GeneratorDiesel_Yearly,LPG_qty,Projector_Yearly):
     #Administration
     Electricity_yearly_emission = Electricity_yearly*0.00085
     WaterWaste_Yearly_emission=WaterWaste_Yearly*0.000298
     Solidwaste_yearly_emission=SolidWaste_Yearly*0.000165
-    GeneratorGrid_Yearly_emission=GeneratorGrid_Yearly*0.37
+    # GeneratorGrid_Yearly_emission=GeneratorGrid_Yearly*0.37
     GeneratorDiesel_Yearly_emission=GeneratorDiesel_Yearly*0.79
     LPG_yearly_Emission = LPG_qty * 0.002983
     #Transport
@@ -216,6 +216,6 @@ def Industrial_carbon_calculator(Electricity_yearly,WaterWaste_Yearly,SolidWaste
     Carbon_Footprint=(Electricity_yearly_emission + WaterWaste_Yearly_emission + Solidwaste_yearly_emission 
                         + Bus_yearly_emission + Car_Yearly_emission + Bike125_Yearly_emission 
                         + Bike500_Yearly_emission + Desktop_Yearly_emission + SmartPhone_Yearly_emission 
-                        + Print_Yearly_emission +Laptop_Yearly_emission + GeneratorGrid_Yearly_emission 
+                        + Print_Yearly_emission +Laptop_Yearly_emission  
                         + GeneratorDiesel_Yearly_emission+LPG_yearly_Emission + Projector_Yearly_emission)
     return Carbon_Footprint
